@@ -24,9 +24,25 @@ and grades every response with the same deterministic grading rules.
 
     python run_tests.py --models all
 
+## Analyze results
+
+Analyze the newest test-run CSV automatically:
+
+    python analyze_results.py
+
+Analyze a specific run or also create charts (charts require `matplotlib`):
+
+    python analyze_results.py --input results/combined_results_YYYYMMDD_HHMMSS.csv
+    
+    python analyze_results.py --charts
+
+The analyzer prints overall, per-model, and per-test results. It also saves a
+summary CSV beside the input file.
+
 ## Project structure
 
 - `run_tests.py` - one main runner for every model
+- `analyze_results.py` - summary statistics and optional charts for test runs
 - `tests.py` - the eight shared test definitions and expected results
 - `graders.py` - Pass / Partial Pass / Fail evaluation logic
 - `models/` - one adapter per AI model

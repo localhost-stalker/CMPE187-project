@@ -1,3 +1,4 @@
 openai
 google-genai
 python-dotenv
+matplotlib==3.11.2

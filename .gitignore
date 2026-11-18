@@ -1,6 +1,6 @@
 .env
 __pycache__/
 *.pyc
-results/*.csv
+results/
 .venv/
 venv/
