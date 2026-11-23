@@ -1,4 +1,11 @@
 openai
 google-genai
+torch>=2.6.0
+torchaudio>=2.6.0
+nemo_toolkit[asr] @ git+https://github.com/NVIDIA/NeMo.git
+# Needed by NeMo speechlm2 (SALM / Canary-Qwen). The full [speechlm2] extra is
+# avoided because it pulls nemo_text_processing -> pynini, which won't build on Windows.
+peft>=0.18.1
+huggingface_hub
 python-dotenv
 matplotlib==3.11.2
