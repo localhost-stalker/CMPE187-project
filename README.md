@@ -5,7 +5,10 @@ and grades every response with the same deterministic grading rules.
 
 ## Setup
 
-1. Create a virtual environment.
+1. Create a virtual environment. Python 3.12 is required to run Nvidia Canary-Qwen 2.5B
+
+   python -3.12 -m venv .venv
+
 2. Install dependencies:
 
    pip install -r requirements.txt
